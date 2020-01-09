@@ -6,8 +6,6 @@ from collision import Collider
 
 class Bullet(object):
 
-
-
     def __init__(self, pos, angle, p):
 
         self.hits = 0
@@ -26,7 +24,6 @@ class Bullet(object):
 
         self.velx = math.cos(math.radians(self.angle * -1 - 90))
         self.vely = math.sin(math.radians(self.angle * -1 - 90))
-
 
 
     def draw(self, screen):
@@ -55,8 +52,6 @@ class Bullet(object):
                 self.vely = self.vely * -1
 
 
-
-
         tank = self.collider.bullet_collided_tank()
         if tank != 0 and self.timeToLive > 0:
 
@@ -65,8 +60,6 @@ class Bullet(object):
             print(tank.p)
 
         self.timeToLive = self.timeToLive - 1
-
-
 
         self.true_pos[0] += self.velx * self.speed * dt
         self.true_pos[1] += self.vely * self.speed * dt

@@ -8,7 +8,6 @@ WALL_COLOR = (105,105,105)
 
 class Wall(object):
 
-
     def __init__(self, point1, point2):
 
         self.point1 = point1

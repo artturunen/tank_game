@@ -106,8 +106,6 @@ class Tank(object):
 
     def draw(self, screen):
 
-
-
         self.rotated = pg.transform.rotate(self.tank_image, self.angle)
         self.rect = self.rotated.get_rect()
         self.rect.center = self.true_pos
