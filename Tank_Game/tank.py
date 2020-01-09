@@ -18,8 +18,6 @@ class Tank(object):
 
     def __init__(self, pos ,DIR_KEYS, keys, p):
 
-
-
         self.p = p
 
         self.DIR_KEYS = DIR_KEYS
@@ -69,8 +67,6 @@ class Tank(object):
 
     def update(self, keys, dt):
 
-
-
         for key in self.DIR_KEYS:
             if keys[key]:
                 if key == self.controls[0] or key == self.controls[1]:
@@ -80,9 +76,6 @@ class Tank(object):
                 if key == self.controls[3]:
                     self.reverse(dt)
                 if key == self.controls[4] and self.lock_1:
-
-                    pg.mixer.music.load("farts.mp3")
-                    pg.mixer.music.play(0)
 
                     angle = self.angle
                     pos = [self.x + 15*math.cos(math.radians(angle * -1 - 90)), self.y + 15*math.sin(math.radians(angle * -1 - 90))]
