@@ -13,4 +13,4 @@ A           arrow left        turn left
 D           arrow right       turn right
 G           K                 shoot
 
-![Screenshot](screenshot_01.jpg?raw=true "Title")
+![Screenshot](screenshot_01.png?raw=true "Title")
