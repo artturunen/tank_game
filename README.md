@@ -1,4 +1,4 @@
-# tank_game
+# Tank Game
 This is my attempt to make a classic player vs player tank game using Pygame.
 
 # How to install
@@ -13,4 +13,4 @@ A           arrow left        turn left
 D           arrow right       turn right
 G           K                 shoot
 
-![Screenshot](screenshot_01.png?raw=true "Title")
+![Screenshot](Tank_Game/screenshot_01.png?raw=true "Title")
